@@ -1,0 +1,113 @@
+body
+{
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    border-radius: 30px;
+    background-color: hsl(217, 19%, 24%);
+    width: 90%; /* Augmenter la largeur à 80% de la largeur de la page */
+    max-width: 700px;
+    height: 400px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+    padding: 20px;
+    /* Centrer verticalement et horizontalement */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1
+{
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    margin-top: 5%;
+    font-size: 18px;
+
+    /* Upper */
+    text-transform: uppercase;
+    /* space */
+    letter-spacing: 8px;
+}
+
+.container p
+{
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+    margin-top: 5%;
+    font-size: 34px;
+}
+
+#pattern
+{
+    /* Centrer verticalement et horizontalement */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Ajuster la taille de l'image */
+    width: 80%;
+}
+
+.container button
+{
+    background-image: url("./images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    /* Create transition */
+    transition: all 0.25s ease;
+    /* Faie en sorte que le bouton ne puisse pas bouger */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container button:hover
+{
+    /* Create effet */
+    box-shadow: 0px 0px 10px 0px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 375px)
+{
+    .container
+    {
+        width: 80%;
+        height: 300px;
+    }
+
+    .container h1
+    {
+        font-size: 16px;
+    }
+
+    .container p
+    {
+        font-size: 28px;
+    }
+
+    #pattern
+    {
+        top: 95%;
+        width: 90%;
+        height: 4%;
+    }
+    .container button
+    {
+        width: 80px;
+        height: 80px;
+        top: 120%;
+    }
+}
